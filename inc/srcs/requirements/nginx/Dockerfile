@@ -19,5 +19,4 @@ RUN ln -s /etc/nginx/sites-available/makbulut.42.fr.conf /etc/nginx/sites-enable
 
 EXPOSE 443
 
-ENTRYPOINT [ "/usr/bin/dumb-init", "--" ]
 CMD [ "nginx", "-g", "daemon off;" ]

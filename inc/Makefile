@@ -43,7 +43,6 @@ clean:
 	$(COMPOSE) down --rmi all --volumes
 
 fclean: clean
-	#sudo $(RM) -r /home/makbulut/data/*
 
 prune: down fclean
 	$(DOCKER) system prune -a -f

@@ -32,5 +32,4 @@ COPY ./conf/mariadb.conf /etc/mysql/mariadb.conf.d/50-server.cnf
 
 EXPOSE 3306
 
-ENTRYPOINT [ "/usr/bin/dumb-init", "--" ]
 CMD ["mysqld", "--bind-address=0.0.0.0" ]

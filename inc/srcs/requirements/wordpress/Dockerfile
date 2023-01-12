@@ -27,5 +27,4 @@ COPY ./tools/www.conf /etc/php/7.3/fpm/pool.d/www.conf
 
 EXPOSE 9000
 
-ENTRYPOINT [ "/usr/bin/dumb-init", "--" ]
 CMD ["/bin/bash", "/tmp/setup.sh" ]
