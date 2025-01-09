@@ -1,7 +1,7 @@
 DOCKER = sudo docker
 COMPOSE = $(DOCKER)-compose -p inception -f srcs/docker-compose.yml
-MARIADB_VOLUME = /home/$(USER)/data/mariadb
-WORDPRESS_VOLUME = /home/$(USER)/data/wordpress
+MARIADB_VOLUME = $(HOME)/data/mariadb
+WORDPRESS_VOLUME = $(HOME)/data/wordpress
 DEPENDENCIES = $(MARIADB_VOLUME) $(WORDPRESS_VOLUME)
 
 all: up
